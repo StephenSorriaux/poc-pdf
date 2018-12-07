@@ -1,0 +1,8 @@
+*.pdf*
+*.xls
+*.csv
+*.json
+test.py
+__pycache__
+.vscode
+.~*

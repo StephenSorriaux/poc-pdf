@@ -1,0 +1,27 @@
+{% extends "bootstrap/base.html" %}
+{% block header %}
+  <h1>{% block title %}Index{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+                <h2>Upload des fichiers</h2>
+                <form action="{{ url_for('generate_output') }}" method="post" enctype="multipart/form-data">
+                    <div class="form-row align-items-center">
+                        <div class="form-group col-md-6">
+                            <label class="form-check-label" form-check-labelfor="pdf">Fichier PDF (besoins) : </label>
+                            <input class="form-control" type="file" name="pdf" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-check-label" for="xls">Fichier Excel (inventaire) : </label>
+                            <input class="form-control" type="file" name="xls" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Lancer le calcul</button>
+                </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

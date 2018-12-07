@@ -1,0 +1,4 @@
+flask
+tabula-py
+flask-bootstrap
+xlrd
