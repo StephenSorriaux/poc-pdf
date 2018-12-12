@@ -23,7 +23,7 @@
 {% if csv is sameas true %}
     <div class="row">
         <div class="col-sm">
-            <a href="/file/output.csv" class="btn btn-success" role="button">Obtenir les résultats au format EXCEL</a></p>
+            <a href="/file/{{ config.EXCEL_FILENAME }}" class="btn btn-success" role="button">Obtenir les résultats au format EXCEL</a></p>
         </div>
     </div>
 {% endif %}

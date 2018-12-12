@@ -2,3 +2,4 @@ flask
 tabula-py
 flask-bootstrap
 xlrd
+xlwt
